@@ -6,8 +6,7 @@ import plotly.express as px
 
 @st.cache
 def load_data():
-    loc = "/Users/carolinegoolsby/Documents/UNCC/Spring_2021/ITCS_4122/final_project/app/newdata2.csv"
-    airdata = pd.read_csv(loc)
+    airdata = pd.read_csv('newdata2.csv')
     return airdata
 
 st.set_page_config(page_title = 'Charlotte Flights', page_icon = ':airplane', layout='wide')
